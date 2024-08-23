@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* RESET */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DECLARAÇÃO DE VARIÁVEIS PARA COR */
+:root {
+    --cor1 : #3D70E6;
+    --cor2 : #413EE6;
+    --cor3 : #010C4A;
+    --cor4 : #001227;
+}
+
+/* -------------- INICIO DA ESTILIZAÇÃO DOS CORPOS PRINCIPAIS -------------- */
+
+body {
+    background-color: var(--cor3);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 40vw;
+    border-radius: 30px;
+    padding: 20px 30px;
+    background-color: var(--cor1);
+    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.685);
+}
+
+/* -------------- FIM DA ESTILIZAÇÃO DOS CORPOS PRINCIPAIS -------------- */
+
+/* Titulo Principal*/
+h1 {
+    text-align: center;
+    font-size: 3.8em;
+    color: var(--cor4);
+}
+
+/* ----- INICIO DA ESTILIZAÇÃO DO INPUT ----- */
+.envelopeInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    margin-top: 10px;
+    translate: -26px;
+    border: none;
+    font-size: 2.8em;
+    border-radius: 30px;
+    width: 55%;
+    height: 50px;
+    color: var();
+    text-align: center;
+    outline-color: var(--cor2);
+    caret-color: transparent;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* ----- FIM DA ESTILIZAÇÃO DO INPUT ----- */
+
+#statsPin {
+    font-size: 1.8em;
+}
+
+/* ---- INICIO DA ESTILIZAÇÃO DOS BOTÕES ---- */
+button {
+    background-color: var(--cor3);
+    color: var(--cor2);
+    border: none;
+    height: 60px;
+    width: 175px;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+}
+/* ---- FIM DA ESTILIZAÇÃO DOS BOTÕES ---- */
+
+/* INICIO DOS ICONES */
+.material-symbols-outlined{
+  font-size: 29px !important;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40;
+}
+
+.iconeLock {
+    margin-right: 26px;
+}
+/* FIM DOS ICONES */
